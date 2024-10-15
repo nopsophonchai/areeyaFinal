@@ -2,7 +2,7 @@ import requests
 import json
 from constants import *
 
-def sendmsg(message):
+def sendmsg(message,userID):
     headers = {
         'Content-Type': 'application/json',
         'Authorization': f'Bearer {CHANNEL_ACCESS_TOKEN}',
@@ -10,7 +10,7 @@ def sendmsg(message):
 
 
     data = {
-        "to": USER_ID,
+        "to": userID,
         "messages": [
             {
                 "type": "text",
