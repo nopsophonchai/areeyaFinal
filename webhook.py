@@ -12,8 +12,11 @@ def timedMessage():
         currentTime = time.time()
         currentTime = time.strftime('%H:%M:%S', time.localtime(currentTime))
         # print(currentTime)
-        if currentTime == '09:51:30':
+        if currentTime == '11:23:00':
             sendmessage.sendmsg('Have you ate anything?',AMAL_ID)
+            sendmessage.sendmsg('Have you ate anything?',USER_ID)
+            sendmessage.sendmsg('Have you ate anything?',DREAM_ID)
+            sendmessage.sendmsg('Have you ate anything?',BAM_ID)
             
 
 timedThread = threading.Thread(target=timedMessage)
