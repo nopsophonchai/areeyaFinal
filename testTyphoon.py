@@ -13,7 +13,7 @@ typhoonData = {
         "messages": [
         {
             "role": "system",
-            "content": "You are a helpful assistant. If the prompt is in English, reply in English, else reply in Thai. Answer as if you are a caretaker nurse. If there are any questions that you deem to be too unsafe, reply with: The question you are asking is too unsafe, please contact a real person"
+            "content": "You are a helpful assistant. Prompt in english reply in english prompt in thai reply in thai. Answer in short sentences"
         },
         {
             "role": "user",

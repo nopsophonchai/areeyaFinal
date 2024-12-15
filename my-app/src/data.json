@@ -1,0 +1,8 @@
+{
+  "BedroomDuration": [7, 6, 8, 6, 7, 5, 6],
+  "KitchenActivity": [3, 4, 2, 5, 3, 4, 3],
+  "LivingRoomStay": [5, 6, 7, 5, 4, 5, 6],
+  "BathroomVisits": [2, 1, 3, 2, 2, 1, 2],
+  "WalkingAnalysis": [2.5, 3.0, 2.8, 3.2, 2.9, 3.1, 3.0], 
+  "DailyMobility": [10, 12, 11, 10, 13, 14, 12]
+}

@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* General styling for the container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px; /* Maximum width for mobile screens */
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart container to maintain aspect ratio */
+.chart-container {
+  width: 100%;
+  height: 300px;
+  margin: 20px 0;
+}
+
+/* Header styling */
+h2 {
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Average time text */
+p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/* Buttons for data selection */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  flex: 1 0 45%; /* Buttons take up 45% of width with responsive wrapping */
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .chart-container {
+    height: 250px; /* Adjust chart size for smaller screens */
+  }
+
+  .btn {
+    flex: 1 0 100%; /* Buttons stack on smaller screens */
+  }
+}
+/* General container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h2 {
+  font-size: 18px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Card container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Individual card styling */
+.card {
+  flex: 1 1 calc(50% - 10px); /* Two cards per row */
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Positive card styling */
+.card.positive {
+  border-left: 5px solid #2ecc71;
+}
+
+/* Negative card styling */
+.card.negative {
+  border-left: 5px solid #e74c3c;
+}
+
+/* Card title styling */
+.card h3 {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Change text styling */
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Highlighted percentage */
+.card p span {
+  font-weight: bold;
+  color: inherit;
+}
+
+/* Button styling */
+.btn {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  .card {
+    flex: 1 1 100%; /* One card per row */
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+}
+
